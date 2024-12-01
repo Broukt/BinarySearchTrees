@@ -71,6 +71,17 @@ void BST::print()
 
 }
 
+int BST::get_height(Node* root)
+{
+	if (!root)
+		return 0;
+	int height_left_branch = this->get_height(root->get_left());
+	int height_right_branch = this->get_height(root->get_right());
+	if (height_left_branch > height_right_branch)
+		return height_left_branch + 1;
+	return height_right_branch + 1;
+}
+
 void BST::clear()
 {
 	while (this->root)

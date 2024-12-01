@@ -69,6 +69,12 @@ public:
 	/// </summary>
 	void print();
 	/// <summary>
+	/// Obtiene la altura del árbol
+	/// </summary>
+	/// <param name="root">Nodo raíz del árbol</param>
+	/// <returns>Altura del árbol</returns>
+	int get_height(Node*);
+	/// <summary>
 	/// Limpia el árbol
 	/// </summary>
 	void clear();
